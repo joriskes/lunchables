@@ -5,12 +5,10 @@
 <details name="faq">
 	<summary>Q: Why doesn't starting-style and allow-discrete work here?</summary>
 	<p>
-		Dunno, it probably should tbh. 
-		Some long content to show how to animate dynamically to essentially auto height
-		Dunno, it probably should tbh. 
-		Some long content to show how to animate dynamically to essentially auto height
-		Dunno, it probably should tbh. 
-		Some long content to show how to animate dynamically to essentially auto height
+		Dunno, it probably should tbh. Some long content to show how to animate dynamically to
+		essentially auto height Dunno, it probably should tbh. Some long content to show how to animate
+		dynamically to essentially auto height Dunno, it probably should tbh. Some long content to show
+		how to animate dynamically to essentially auto height
 	</p>
 </details>
 <details name="faq">
@@ -33,14 +31,14 @@
 		}
 	}
 
-  details {
-    align-self: flex-start;
-    margin-left: 20vw;
-    font-size: 24px;
+	details {
+		align-self: flex-start;
+		margin-left: 20vw;
+		font-size: 24px;
 		cursor: pointer;
 
 		& p {
 			padding: 8px 0;
 		}
-  }
+	}
 </style>

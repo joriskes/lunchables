@@ -14,16 +14,20 @@ order: 12
 <NestedClick />
 
 ```html
-<div id="div1"><div id="div2"><div id="div3"><div id="div4"></div></div></div></div>
+<div id="div1">
+	<div id="div2">
+		<div id="div3"><div id="div4"></div></div>
+	</div>
+</div>
 
 <script>
-  declare function highlight(ev: Event): void;
-  let div1: HTMLElement, div2: HTMLElement, div3: HTMLElement, div4: HTMLElement;
-  // ...
+	declare function highlight(ev: Event): void;
+	let div1: HTMLElement, div2: HTMLElement, div3: HTMLElement, div4: HTMLElement;
+	// ...
 
-  div1.addEventListener('click', highlight, { capture: true });
-  div1.addEventListener('click', highlight);
+	div1.addEventListener('click', highlight, { capture: true });
+	div1.addEventListener('click', highlight);
 
-  // div{n}.add...
+	// div{n}.add...
 </script>
 ```

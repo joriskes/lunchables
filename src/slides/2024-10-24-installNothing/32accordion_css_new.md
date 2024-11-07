@@ -19,12 +19,10 @@ order: 32
 <details name="faq">
 	<summary>Q: Why doesn't starting-style and allow-discrete work here?</summary>
 	<p>
-		Dunno, it probably should tbh.
-		Some long content to show how to animate dynamically to essentially auto height
-		Dunno, it probably should tbh.
-		Some long content to show how to animate dynamically to essentially auto height
-		Dunno, it probably should tbh.
-		Some long content to show how to animate dynamically to essentially auto height
+		Dunno, it probably should tbh. Some long content to show how to animate dynamically to
+		essentially auto height Dunno, it probably should tbh. Some long content to show how to animate
+		dynamically to essentially auto height Dunno, it probably should tbh. Some long content to show
+		how to animate dynamically to essentially auto height
 	</p>
 </details>
 <details name="faq">

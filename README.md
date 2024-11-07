@@ -8,6 +8,7 @@ Powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/
 
 - Add a directory to `/src/slides`.
 - Add a `0meta.txt` file to that directory.
+
 ```txt
 ---
 title: 'Lunchable: Presentation title'
@@ -15,6 +16,7 @@ description: 'Presentation description'
 ---
 
 ```
+
 - Optional: Add a `0style.css` file to that directory.
 - Start adding slides.
 
@@ -27,18 +29,23 @@ Every slide is a markdown file.
 The common values are:
 
 #### `title`: `string`
+
 The title of the window and the main header if no subtitle is given.
 
-#### `subtitle`: `string` *[optional]*
+#### `subtitle`: `string` _[optional]_
+
 Used for continuation slides. i.e. This is semantically less important, but will be shown as the main header.
 
 #### `type`: `'content'` | `'demo'` | `'ship'` | `'code'`
+
 The boilerplate layout to use.
 
 #### `order`: `number`
+
 The order in which the slides are sorted. It is considered good practice to also add this to the start of the filename.
 
 ### Components
+
 Custom (svelte) components can be created in the `$lib/components/` directory.
 These components should be re-usable across multiple presentations.
 

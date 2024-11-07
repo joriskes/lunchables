@@ -12,4 +12,3 @@ order: 53
 <ShipScore chrome="64" firefox="59" safari="14" globalScore="98.46%!" shipIt>
   <small>Without event propagation... (e.g. capturing, bubbling, ...)</small>
 </ShipScore>
-

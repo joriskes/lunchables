@@ -7,17 +7,18 @@ order: 52
 
 ```typescript
 class Counter extends EventTarget {
-  value = 0;
+	value = 0;
 
-  emitChangeEvent() {
-    this.dispatchEvent(new CustomEvent("valuechange", { detail: this.value }));
-  }
+	emitChangeEvent() {
+		this.dispatchEvent(new CustomEvent('valuechange', { detail: this.value }));
+	}
 
-  increment() {
-    this.value++; this.emitChangeEvent();
-  }
+	increment() {
+		this.value++;
+		this.emitChangeEvent();
+	}
 }
 
 const counter = new Counter();
-counter.addEventListener("valuechange", (ev) => console.log(event.detail));
+counter.addEventListener('valuechange', (ev) => console.log(event.detail));
 ```

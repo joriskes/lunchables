@@ -15,10 +15,10 @@ order: 3
 <button id="surprise-button">DO NOT SPAM THIS BUTTON!!!</button>
 
 <script>
-  declare function createSurpriseElement();
+	declare function createSurpriseElement();
 
-  const trigger: HTMLButtonElement = document.getElementById('surprise-button');
+	const trigger: HTMLButtonElement = document.getElementById('surprise-button');
 
-  trigger.addEventListener('click', createSurpriseElement);
+	trigger.addEventListener('click', createSurpriseElement);
 </script>
 ```

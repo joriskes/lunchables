@@ -1,14 +1,14 @@
 <script>
-  const setDialog = () => {
-    const dialog = document.querySelector('#demo-drawer-css');
-    const open = document.querySelector('#trigger');
-    const close = document.querySelector('#demo-drawer-css .close');
-    open.addEventListener('click', () => dialog.showModal());
-    close.addEventListener('click', () => dialog.close());  
-  }
+	const setDialog = () => {
+		const dialog = document.querySelector('#demo-drawer-css');
+		const open = document.querySelector('#trigger');
+		const close = document.querySelector('#demo-drawer-css .close');
+		open.addEventListener('click', () => dialog.showModal());
+		close.addEventListener('click', () => dialog.close());
+	};
 </script>
 
-<svelte:window on:load={setDialog()}></svelte:window>
+<svelte:window on:load={setDialog()} />
 
 <button id="trigger">Open Dialog</button>
 <dialog id="demo-drawer-css">
@@ -87,70 +87,69 @@
 		inset-block-start: 1rem;
 	}
 
-  button {
-    border: 1px solid #fff;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  dialog {
-    padding: 16px;
-    border-radius: 16px;
-    width: 35%;
+	button {
+		border: 1px solid #fff;
+		padding: 8px;
+		border-radius: 4px;
+	}
+	dialog {
+		padding: 16px;
+		border-radius: 16px;
+		width: 35%;
 
-    &[open]::backdrop {
-      background: rgba(0,0,0,0.7);
-    }
+		&[open]::backdrop {
+			background: rgba(0, 0, 0, 0.7);
+		}
 
-    & p {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 4px;
-    }
+		& p {
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 4px;
+		}
 
-    & form {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
+		& form {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
 
-    & input {
-      border: 1px solid grey;
-      border-radius: 4px;
-      padding: 2px 4px;
-    }
+		& input {
+			border: 1px solid grey;
+			border-radius: 4px;
+			padding: 2px 4px;
+		}
 
-    & button {
-      background: #000;
-      color: #fff;
-      text-transform: uppercase;
-    }
-  }
+		& button {
+			background: #000;
+			color: #fff;
+			text-transform: uppercase;
+		}
+	}
 
-  #demo-modal {
-    &,
-    ::backdrop {
-      transition: 
-        display 0.3s allow-discrete,
-        overlay 0.3s allow-discrete,
-        translate 0.3s,
-        opacity 0.3s;
-      opacity: 0;
-      translate: 0 20px 
-    }
+	#demo-modal {
+		&,
+		::backdrop {
+			transition:
+				display 0.3s allow-discrete,
+				overlay 0.3s allow-discrete,
+				translate 0.3s,
+				opacity 0.3s;
+			opacity: 0;
+			translate: 0 20px;
+		}
 
-    &[open],
+		&[open],
 		&[open]::backdrop {
 			opacity: 1;
 			translate: 0 0;
 		}
 
-    @starting-style {
+		@starting-style {
 			&[open],
 			&[open]::backdrop {
 				opacity: 0;
 				translate: 0 20px;
 			}
 		}
-  }
-  
+	}
 </style>

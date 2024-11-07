@@ -44,13 +44,13 @@ order: 18
 					let animation = popover.animate(
 						{
 							translate,
-							opacity,
+							opacity
 						},
 						{
 							duration: 300,
 							easing: 'ease-in-out',
-							fill: 'forwards',
-						},
+							fill: 'forwards'
+						}
 					);
 					animation.onfinish = () => {
 						if (!is_opening) popover.hidePopover();

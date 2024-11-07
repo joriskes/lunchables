@@ -1,23 +1,23 @@
 <script>
-  const toggleAccordion = () => {
-    const details = document.querySelector('#demo-accordion-vt');
-    const content = details.querySelector('#demo-accordion-vt .details-content');
-    const summary = details.querySelector('#demo-accordion-vt summary');
+	const toggleAccordion = () => {
+		const details = document.querySelector('#demo-accordion-vt');
+		const content = details.querySelector('#demo-accordion-vt .details-content');
+		const summary = details.querySelector('#demo-accordion-vt summary');
 
-    summary.addEventListener('click', async (e) => {
-      e.preventDefault();
-      let transition = document.startViewTransition(() => {
-        if (details.open) {
-          details.open = false;
-        } else {
-          details.open = true;
-        }
-      });
-    });
+		summary.addEventListener('click', async (e) => {
+			e.preventDefault();
+			let transition = document.startViewTransition(() => {
+				if (details.open) {
+					details.open = false;
+				} else {
+					details.open = true;
+				}
+			});
+		});
 	};
 </script>
 
-<svelte:window on:load={toggleAccordion()}></svelte:window>
+<svelte:window on:load={toggleAccordion()} />
 
 <details id="demo-accordion-vt">
 	<summary>Details</summary>
@@ -28,14 +28,14 @@
 </details>
 
 <style>
-  details {
-    align-self: flex-start;
-    margin-left: 20vw;
-    font-size: 24px;
-    cursor: pointer;
-    
-    & p {
+	details {
+		align-self: flex-start;
+		margin-left: 20vw;
+		font-size: 24px;
+		cursor: pointer;
+
+		& p {
 			padding: 8px 0;
 		}
-  }
+	}
 </style>

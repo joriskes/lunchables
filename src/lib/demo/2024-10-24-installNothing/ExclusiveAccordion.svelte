@@ -12,14 +12,14 @@
 </details>
 
 <style>
-  details {
-    align-self: flex-start;
-    margin-left: 20vw;
-    font-size: 24px;
-    cursor: pointer;
+	details {
+		align-self: flex-start;
+		margin-left: 20vw;
+		font-size: 24px;
+		cursor: pointer;
 
-    & p {
+		& p {
 			padding: 8px 0;
 		}
-  }
+	}
 </style>

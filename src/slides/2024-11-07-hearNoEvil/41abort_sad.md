@@ -13,11 +13,11 @@ elB.addEventListener('click', handlerB);
 // ...
 
 onDestroy(() => {
-  elA.removeEventListener('click', handlerA);
-  elA.removeEventListener('click', handlerB);
-  elB.removeEventListener('click', handlerA);
-  elB.removeEventListener('click', handlerB);
-  // ...
+	elA.removeEventListener('click', handlerA);
+	elA.removeEventListener('click', handlerB);
+	elB.removeEventListener('click', handlerA);
+	elB.removeEventListener('click', handlerB);
+	// ...
 });
 ```
 

@@ -5,21 +5,21 @@ export async function load({ fetch, params }) {
 	if (!result.ok) {
 		return {
 			error: message || `Could not find presentation ${params.presentation}`,
-			href: '/',
+			href: '/'
 		};
 	}
 
 	if (!meta || !meta.title) {
 		return {
 			error: message || `Could not find presentation ${params.presentation}`,
-			href: '/',
+			href: '/'
 		};
 	}
 
 	if (!slides || !slides[0] || !slides[0].slug) {
 		return {
 			error: message || `Could not find slides for presentation ${meta.title}`,
-			href: '/',
+			href: '/'
 		};
 	}
 
@@ -27,6 +27,6 @@ export async function load({ fetch, params }) {
 		meta,
 		slides,
 		error: null,
-		href: `${meta.presentation}/${slides[0].slug}`,
-	 }
+		href: `${meta.presentation}/${slides[0].slug}`
+	};
 }

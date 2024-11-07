@@ -15,18 +15,18 @@ order: 22
 <div id="parent"><button id="surprise-button">Try me, I dare you!</button></div>
 
 <script>
-  declare function createSurpriseElement();
-  const parent: HTMLDivElement = document.getElementById('parent');
-  const trigger: HTMLButtonElement = document.getElementById('surprise-button');
-  let stopImmediate: boolean = false;
+	declare function createSurpriseElement();
+	const parent: HTMLDivElement = document.getElementById('parent');
+	const trigger: HTMLButtonElement = document.getElementById('surprise-button');
+	let stopImmediate: boolean = false;
 
-  for(let i = 0; i < 20; i++) {
-    trigger.addEventListener('click', (ev) => {
-      stopImmediate && ev.stopImmediatePropagation();
-      createSurpriseElement('monkeys');
-    });
+	for(let i = 0; i < 20; i++) {
+	  trigger.addEventListener('click', (ev) => {
+	    stopImmediate && ev.stopImmediatePropagation();
+	    createSurpriseElement('monkeys');
+	  });
 
-    parent.addEventListener('click', () => createSurpriseElement('bananas'));
-  }
+	  parent.addEventListener('click', () => createSurpriseElement('bananas'));
+	}
 </script>
 ```

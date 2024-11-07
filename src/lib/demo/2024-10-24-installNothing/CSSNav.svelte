@@ -13,13 +13,12 @@
 </nav>
 
 <style>
+	button {
+		border: 1px solid #fff;
+		padding: 8px;
+		border-radius: 4px;
+	}
 
-  button {
-    border: 1px solid #fff;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
 	#demo-mobile-nav[popover] {
 		transition:
 			display 0.3s allow-discrete,
@@ -33,32 +32,32 @@
 		inline-size: 40vi;
 		inset-inline-start: unset;
 		inset-inline-end: 0;
-    background: rgba(0,0,0);
-    color: #fff;
-    padding: 20px;
+		background: rgba(0, 0, 0);
+		color: #fff;
+		padding: 20px;
 
-    & button {
-      position: absolute;
-      right: 20px;
-      top: 20px;
-      width: 40px;
-      aspect-ratio: 1;
-    }
+		& button {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			width: 40px;
+			aspect-ratio: 1;
+		}
 
-    & ul {
-      display: flex;
-      flex-direction: column;
+		& ul {
+			display: flex;
+			flex-direction: column;
 
-      & li {
-        display: block;
-        padding: 10px 40px 10px 20px;
-        text-decoration: unset;
-        border-radius: 4px;
-        text-transform: uppercase;
-        font-size: 24px;
-      }
-    }
-     
+			& li {
+				display: block;
+				padding: 10px 40px 10px 20px;
+				text-decoration: unset;
+				border-radius: 4px;
+				text-transform: uppercase;
+				font-size: 24px;
+			}
+		}
+
 		&:popover-open {
 			translate: 0;
 			transition-timing-function: ease-out;

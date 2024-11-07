@@ -15,10 +15,10 @@ order: 21
 <button id="surprise-button">No more spam, please!</button>
 
 <script>
-  declare function createSurpriseElement();
+	declare function createSurpriseElement();
 
-  const trigger: HTMLButtonElement = document.getElementById('surprise-button');
+	const trigger: HTMLButtonElement = document.getElementById('surprise-button');
 
-  trigger.addEventListener('click', createSurpriseElement, { once: true });
+	trigger.addEventListener('click', createSurpriseElement, { once: true });
 </script>
 ```

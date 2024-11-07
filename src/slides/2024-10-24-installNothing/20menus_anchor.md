@@ -12,9 +12,7 @@ order: 20
 <AnchorPopover />
 
 ```html
-<button id="menu-anchor" class="menu-button" popovertarget="anchored-menu">
-	***
-</button>
+<button id="menu-anchor" class="menu-button" popovertarget="anchored-menu">***</button>
 
 <div popover id="anchored-menu" class="menu">
 	<ul class="menu-demo">
