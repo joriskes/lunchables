@@ -1,7 +1,7 @@
 ---
 title: Advent of code
 type: 'content'
-order: 0
+order: 2
 ---
 
 ![Svelte](/aoc/meme.jpg)
