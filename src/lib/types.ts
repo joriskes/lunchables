@@ -5,3 +5,9 @@ export type Slide = {
 	order: number;
 	slug: string;
 };
+
+export type Meta = {
+	description: string;
+	presentation: string;
+	title: string;
+};

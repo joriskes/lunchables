@@ -18,18 +18,21 @@
 		switch (key.code) {
 			case 'ArrowRight':
 			case 'Space':
-				if ($page.data.slides) {
-					goto($page.data.slides[0].slug);
-				} else {
+				if ($page.data.slides && $page.data.meta) {
+					goto(`${$page.data.meta.presentation}/${$page.data.slides[0].slug}`);
+				} else if ($page.data.latest) {
+					goto($page.data.latest);
+				} else if ($page.data.next) {
 					goto($page.data.next);
 				}
 				break;
 			case 'ArrowLeft':
-				if ($page.data.slides) {
-					return;
-				} else {
+				if ($page.data.previous) {
 					goto($page.data.previous);
+				} else {
+					goto('/');
 				}
+				break;
 			default:
 				break;
 		}
@@ -38,6 +41,6 @@
 
 <svelte:window on:keydown={navigate} />
 
-<main class="w-screen h-screen text-gray-100 bg-gray-950">
+<main class="w-screen h-screen relative overflow-hidden text-gray-100 bg-gray-950">
 	<slot />
 </main>
