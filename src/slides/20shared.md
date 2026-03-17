@@ -1,7 +1,7 @@
 ---
 title: Sharing knowledge across the team
 type: 'content'
-order: 20
+order: 11
 ---
 
 - Every time someone figures something out with Claude, that knowledge currently lives on their machine

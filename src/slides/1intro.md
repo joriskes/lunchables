@@ -4,11 +4,11 @@ type: 'content'
 order: 1
 ---
 
-- Skills & agentic workflows
-- CLAUDE.md — persistent memory
+- CLAUDE.md — persistent context
 - Skills — reusable slash commands
+- Agentic workflows
 - Hooks — automated actions
-- The Weeztix setup: database, dockerized, legacy quirks
+- The Weeztix setup
 - Sharing knowledge as a team
 - Tips & tricks
 

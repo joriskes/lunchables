@@ -8,3 +8,5 @@ order: 98
 - `/btw` — pass Claude a side note without triggering it to act. Useful for adding context mid-task: `/btw the staging db is read-only`
 - `claude --resume` — pick up a previous conversation exactly where you left it. Claude restores the full context, including files read and decisions made.
 - Just ask — Claude can rebase, commit, and push for you. No need to leave the conversation.
+- `Ctrl+E` — before submitting a prompt, checks the risk level of the operation Claude is about to perform. Useful for catching destructive actions before they run.
+- `/stats` — shows your Claude usage stats over time.

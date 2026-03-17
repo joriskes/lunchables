@@ -13,8 +13,8 @@ order: 3
 		<p>Claude reads <code class="text-yellow-300 bg-gray-800 px-1 rounded">CLAUDE.md</code> at the start of <em>every</em> conversation.</p>
 		<p>Two scopes:</p>
 		<ul class="flex flex-col gap-2 ml-4 list-none">
-			<li>🌍 <strong class="text-white">Global</strong> — <code class="text-gray-400">~/.claude/CLAUDE.md</code><br/><span class="text-gray-400 text-xs">Applies to all projects</span></li>
-			<li>📁 <strong class="text-white">Per-project</strong> — <code class="text-gray-400">CLAUDE.md</code> at repo root<br/><span class="text-gray-400 text-xs">Checked into git, shared with the team</span></li>
+			<li><strong class="text-white">Global</strong> — <code class="text-gray-400">~/.claude/CLAUDE.md</code><br/><span class="text-gray-400 text-xs">Applies to all projects</span></li>
+			<li><strong class="text-white">Per-project</strong> — <code class="text-gray-400">CLAUDE.md</code> at repo root<br/><span class="text-gray-400 text-xs">Checked into git, shared with the team</span></li>
 		</ul>
 		<p>Don't want to write it yourself? Run <code class="text-yellow-300 bg-gray-800 px-1 rounded">/init</code> — Claude will analyse the codebase and generate one for you.</p>
 		<p>Use it to encode:</p>
