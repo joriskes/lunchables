@@ -1,5 +1,5 @@
 <script lang="ts">
-	const code = `# Personal Claude Code Configuration
+	const code = `# Personal OpenCode Configuration
 
 ## Communication Style
 - Be concise and direct. Skip preamble and filler.
@@ -54,7 +54,10 @@
 	}
 </script>
 
-<pre class="h-full overflow-y-auto rounded-lg p-4 text-xs leading-relaxed bg-[#0d1117] font-mono">{@html highlight(code)}</pre>
+<pre
+	class="h-full overflow-y-auto rounded-lg p-4 text-xs leading-relaxed bg-[#0d1117] font-mono">{@html highlight(
+		code
+	)}</pre>
 
 <style>
 	pre :global(.h1) {

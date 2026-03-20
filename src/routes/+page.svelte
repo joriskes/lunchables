@@ -12,7 +12,5 @@
 	<a href={data.slides[0].slug} class="w-2/3 mb-16"
 		><img src="/Lunchables.svg" alt="Lunchables" class="w-full" /></a
 	>
-	<h1 class="font-black tracking-tighter text-center uppercase text-9xl">
-		Claude &nbsp; Code
-	</h1>
+	<h1 class="font-black tracking-tighter text-center uppercase text-9xl">Open &nbsp; Code</h1>
 </div>

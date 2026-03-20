@@ -12,10 +12,10 @@ order: 4
 	<div class="flex-1 flex flex-col gap-4 text-gray-200 pt-1">
 		<p>Skills are reusable slash commands you invoke during a conversation:</p>
 		<p class="text-yellow-300 bg-gray-800 rounded px-3 py-2 font-mono text-sm">/architect</p>
-		<p>Defined as markdown files with a YAML frontmatter header. Two scopes:</p>
+		<p>Each skill is a <code class="text-gray-400">SKILL.md</code> file inside a named directory. Two scopes:</p>
 		<ul class="flex flex-col gap-2 ml-4 list-none">
-			<li><strong class="text-white">Global</strong> — <code class="text-gray-400">~/.claude/skills/</code></li>
-			<li><strong class="text-white">Per-project</strong> — <code class="text-gray-400">.claude/skills/</code></li>
+			<li><strong class="text-white">Global</strong> — <code class="text-gray-400">~/.config/opencode/skills/architect/SKILL.md</code></li>
+			<li><strong class="text-white">Per-project</strong> — <code class="text-gray-400">.opencode/skills/architect/SKILL.md</code></li>
 		</ul>
 		<p>Built-in skills:</p>
 		<ul class="flex flex-col gap-2 ml-4 list-none">

@@ -4,8 +4,8 @@ type: 'content'
 order: 2
 ---
 
-Claude Code is _just_ a CLI — but it shines through:
+OpenCode is a frontend for an LLM. The power is in how you configure it:
 
-- **CLAUDE.md** — persistent context that makes it understand your project
+- **AGENTS.md** — persistent context that makes the LLM understand your project
 - **Skills** — reusable slash commands that encode your team's workflows
-- **Agentic workflows** — Claude plans, reads files, runs tests, makes commits, and iterates
+- **Agentic workflows** — the LLM plans, reads files, runs tests, makes commits, and iterates

@@ -4,9 +4,8 @@ type: 'content'
 order: 98
 ---
 
-- `/compact` — summarizes the conversation history to free up context window space. Use it when a long session starts to slow down or drift.
-- `/btw` — pass Claude a side note without triggering it to act. Useful for adding context mid-task: `/btw the staging db is read-only`
-- `claude --resume` — pick up a previous conversation exactly where you left it. Claude restores the full context, including files read and decisions made.
-- Just ask — Claude can rebase, commit, and push for you. No need to leave the conversation.
-- `Ctrl+E` — before submitting a prompt, checks the risk level of the operation Claude is about to perform. Useful for catching destructive actions before they run.
-- `/stats` — shows your Claude usage stats over time.
+- `/sessions` — list and switch between sessions. Start fresh with `/new`, come back later with `/sessions`. Your history is always there.
+- `Tab` — toggle between Plan mode and Build mode. Plan first, build when you're happy with the approach.
+- Just ask — the LLM can rebase, commit, and push for you. No need to leave the conversation.
+- `/undo` / `/redo` — revert or restore the last change, including file edits. Backed by git internally.
+- `!command` — run a shell command inline (e.g. `!ls -la`). The output is added to the conversation as context.

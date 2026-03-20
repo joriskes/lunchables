@@ -1,27 +1,18 @@
 <script lang="ts">
 	const code = `{
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "f=$(jq -r '.tool_input.file_path');
-  echo \\"$f\\" | grep -qE '\\.php$' &&
-  NO_TTY=true docker exec
-    eventixapi-legacy-api-1
-    sh -c \\"./vendor/bin/php-cs-fixer
-      fix --path-mode=intersection
-      \\\\\\"$f\\\\\\"\\" 2>/dev/null
-  || true",
-            "timeout": 30,
-            "statusMessage":
-              "Running php-cs-fixer..."
-          }
-        ]
-      }
-    ]
+  "$schema": "https://opencode.ai/config.json",
+  "formatter": {
+    "php-cs-fixer": {
+      "command": [
+        "sh", "-c",
+        "NO_TTY=true docker exec
+  eventixapi-legacy-api-1
+  sh -c './vendor/bin/php-cs-fixer
+    fix --path-mode=intersection
+    \\"$FILE\\"' 2>/dev/null || true"
+      ],
+      "extensions": [".php"]
+    }
   }
 }`;
 
@@ -56,7 +47,10 @@
 	}
 </script>
 
-<pre class="h-full overflow-y-auto rounded-lg p-4 text-xs leading-relaxed bg-[#0d1117] font-mono">{@html highlight(code)}</pre>
+<pre
+	class="h-full overflow-y-auto rounded-lg p-4 text-xs leading-relaxed bg-[#0d1117] font-mono">{@html highlight(
+		code
+	)}</pre>
 
 <style>
 	pre :global(.key) {

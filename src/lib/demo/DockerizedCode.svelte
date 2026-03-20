@@ -24,7 +24,7 @@ either \`docker exec\`s in or starts a fresh one.
 
 - \`NO_TTY=true\` — skip the \`-it\` flag;
   required when running from a
-  non-interactive context (e.g. Claude Code)
+  non-interactive context (e.g. OpenCode)
 - \`NEW_CONTAINER=true\` — force a fresh
   container
 - \`PRINT_COMMAND=true\` — print the full
@@ -62,7 +62,10 @@ either \`docker exec\`s in or starts a fresh one.
 	}
 </script>
 
-<pre class="h-full overflow-y-auto rounded-lg p-4 text-xs leading-relaxed bg-[#0d1117] font-mono">{@html highlight(code)}</pre>
+<pre
+	class="h-full overflow-y-auto rounded-lg p-4 text-xs leading-relaxed bg-[#0d1117] font-mono">{@html highlight(
+		code
+	)}</pre>
 
 <style>
 	pre :global(.h2) {
