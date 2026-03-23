@@ -3,7 +3,7 @@
 
 The \`management\` database schema (MariaDB)
 is documented at:
-\`~/.config/opencode/mariadb_management_ddl.sql\`
+\`/home/joris/.claude/mariadb_management_ddl.sql\`
 
 Read this file when asked about table
 structure, columns, indexes, or foreign
@@ -26,10 +26,7 @@ keys.`;
 	}
 </script>
 
-<pre
-	class="overflow-y-auto rounded-lg p-4 text-xs leading-relaxed bg-[#0d1117] font-mono">{@html highlight(
-		code
-	)}</pre>
+<pre class="overflow-y-auto rounded-lg p-4 text-xs leading-relaxed bg-[#0d1117] font-mono">{@html highlight(code)}</pre>
 
 <style>
 	pre :global(.h2) {

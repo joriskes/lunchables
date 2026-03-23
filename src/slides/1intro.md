@@ -4,7 +4,7 @@ type: 'content'
 order: 1
 ---
 
-- AGENTS.md — persistent context
+- CLAUDE.md — persistent context
 - Skills — reusable slash commands
 - Agentic workflows
 - Hooks — automated actions

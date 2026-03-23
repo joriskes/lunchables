@@ -2,6 +2,7 @@
 	const code = `---
 name: fix
 description: Diagnose and fix a bug end-to-end.
+user-invocable: true
 ---
 
 You are fixing a bug. Work autonomously:
@@ -68,10 +69,7 @@ questions.`;
 	}
 </script>
 
-<pre
-	class="h-full overflow-y-auto rounded-lg p-4 text-xs leading-relaxed bg-[#0d1117] font-mono">{@html highlight(
-		code
-	)}</pre>
+<pre class="h-full overflow-y-auto rounded-lg p-4 text-xs leading-relaxed bg-[#0d1117] font-mono">{@html highlight(code)}</pre>
 
 <style>
 	pre :global(.delimiter) {

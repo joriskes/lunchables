@@ -5,6 +5,7 @@ description: Enter planning mode as a skeptical software
   architect. Challenges assumptions, surfaces trade-offs,
   and stress-tests implementation plans before any code
   is written.
+user-invocable: true
 ---
 
 Enter plan mode. Act as a senior software architect
@@ -73,17 +74,17 @@ properly stress-tested, not to block progress.`;
 
 				if (line.trim() === '') return '';
 
-				const inner = esc(line).replace(/\*\*(.+?)\*\*/g, '<span class="bold">**$1**</span>');
+				const inner = esc(line).replace(
+					/\*\*(.+?)\*\*/g,
+					'<span class="bold">**$1**</span>'
+				);
 				return `<span class="text">${inner}</span>`;
 			})
 			.join('\n');
 	}
 </script>
 
-<pre
-	class="h-full overflow-y-auto rounded-lg p-4 text-xs leading-relaxed bg-[#0d1117] font-mono">{@html highlight(
-		code
-	)}</pre>
+<pre class="h-full overflow-y-auto rounded-lg p-4 text-xs leading-relaxed bg-[#0d1117] font-mono">{@html highlight(code)}</pre>
 
 <style>
 	pre :global(.delimiter) {
