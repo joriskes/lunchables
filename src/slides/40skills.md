@@ -1,7 +1,7 @@
 ---
 title: Skills
 type: 'split'
-order: 4
+order: 40
 ---
 
 <script>
@@ -17,10 +17,11 @@ order: 4
 			<li><strong class="text-white">Global</strong> — <code class="text-gray-400">~/.claude/skills/</code></li>
 			<li><strong class="text-white">Per-project</strong> — <code class="text-gray-400">.claude/skills/</code></li>
 		</ul>
-		<p>Built-in skills:</p>
+		<p>Example of skills:</p>
 		<ul class="flex flex-col gap-2 ml-4 list-none">
 			<li><code class="text-yellow-300">/simplify</code> — <span class="text-gray-300">reviews changed code for reuse, quality, and efficiency, then fixes issues found</span></li>
 			<li><code class="text-yellow-300">/pr-review</code> — <span class="text-gray-300">reviews the current branch as a PR: checks for bugs, logic issues, security concerns, and code quality</span></li>
+			<li><code class="text-yellow-300">/pr-intent</code> — <span class="text-gray-300">generates a concise summary of what a PR solves and why — not what lines changed</span></li>
 		</ul>
 	</div>
 	<div class="flex-1 h-full">

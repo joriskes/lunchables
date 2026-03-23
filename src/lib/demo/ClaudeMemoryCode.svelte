@@ -1,5 +1,5 @@
 <script lang="ts">
-	const code = `# Personal Claude Code Configuration
+	const code = `# Personal AI Configuration
 
 ## Communication Style
 - Be concise and direct. Skip preamble and filler.

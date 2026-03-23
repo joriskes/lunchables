@@ -13,6 +13,6 @@
 		><img src="/Lunchables.svg" alt="Lunchables" class="w-full" /></a
 	>
 	<h1 class="font-black tracking-tighter text-center uppercase text-9xl">
-		Claude &nbsp; Code
+		Vibe with Claude
 	</h1>
 </div>

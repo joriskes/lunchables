@@ -1,7 +1,7 @@
 ---
 title: Tips & tricks
 type: 'content'
-order: 98
+order: 50
 ---
 
 - `/compact` — summarizes the conversation history to free up context window space. Use it when a long session starts to slow down or drift.
@@ -9,4 +9,6 @@ order: 98
 - `claude --resume` — pick up a previous conversation exactly where you left it. Claude restores the full context, including files read and decisions made.
 - Just ask — Claude can rebase, commit, and push for you. No need to leave the conversation.
 - `Ctrl+E` — before submitting a prompt, checks the risk level of the operation Claude is about to perform. Useful for catching destructive actions before they run.
-- `/stats` — shows your Claude usage stats over time.
+- `!ls` — Bang operators run commands and return the output to Claude.
+- `Learning mode`
+- Other options exist — Claude Code is the official CLI, opencode is a community TUI alternative, Cursor is an AI first IDE. Since they all pick up `AGENTS.md`, switching between them is zero effort. Try to find out what you like!
